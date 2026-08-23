@@ -1,0 +1,365 @@
+/* Palette: the product's own tokens. Light is defined once on bare :root; dark redefines the same
+     names — first for the system default, guarded so an explicit light choice beats a dark
+     OS, then again for the explicit dark choice so the toggle wins both ways. */
+  :root {
+    color-scheme: light dark;
+
+    --bg: #f7f6f2;
+    --bg-tint: #f1efe9;
+    --surface: #ffffff;
+    --surface-2: #e8e5dc;
+
+    --ink: #1c1c1a;
+    --ink-2: #4b4841;
+    --ink-3: #6b675f;
+
+    --line: #ded9cf;
+    --line-strong: #c6c0b3;
+
+    --accent: #2f5d47;
+    --accent-hi: #3d7259;
+    --accent-ink: #ffffff;
+    --accent-wash: #e4ede8;
+
+    --shadow-sm: 0 1px 2px rgba(23, 23, 28, .05), 0 1px 3px rgba(23, 23, 28, .06);
+    --shadow-md: 0 2px 4px rgba(23, 23, 28, .03), 0 10px 30px rgba(23, 23, 28, .07);
+
+    --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, monospace;
+
+    --r-pill: 999px;
+    --r-card: 0.75rem;
+
+    --shell: 74rem;
+    --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121210;
+      --bg-tint: #1a1a17;
+      --surface: #262623;
+      --surface-2: #302f2b;
+      --ink: #ece9e1;
+      --ink-2: #b8b3a8;
+      --ink-3: #8d887d;
+      --line: #302f2b;
+      --line-strong: #444239;
+      --accent: #8ec4a9;
+      --accent-hi: #a3d3bb;
+      --accent-ink: #14201a;
+      --accent-wash: #1f2a25;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, .45);
+      --shadow-md: 0 2px 6px rgba(0, 0, 0, .5), 0 12px 32px rgba(0, 0, 0, .4);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #121210;
+    --bg-tint: #1a1a17;
+    --surface: #262623;
+    --surface-2: #302f2b;
+    --ink: #ece9e1;
+    --ink-2: #b8b3a8;
+    --ink-3: #8d887d;
+    --line: #302f2b;
+    --line-strong: #444239;
+    --accent: #8ec4a9;
+    --accent-hi: #a3d3bb;
+    --accent-ink: #14201a;
+    --accent-wash: #1f2a25;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .45);
+    --shadow-md: 0 2px 6px rgba(0, 0, 0, .5), 0 12px 32px rgba(0, 0, 0, .4);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: var(--r-pill);
+  }
+
+  .rails {
+    max-width: var(--shell);
+    margin-inline: auto;
+    border-inline: 1px solid var(--line);
+  }
+  .inner { padding-inline: var(--gutter); }
+
+  /* ---- nav ----------------------------------------------------------------- */
+
+  .nav {
+    position: sticky; top: 0; z-index: 30;
+    background: color-mix(in srgb, var(--bg) 86%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav__in {
+    max-width: var(--shell); margin-inline: auto;
+    padding: 0.8125rem var(--gutter);
+    display: flex; align-items: center; gap: 1.5rem;
+  }
+  .mark {
+    font-size: 1.1875rem; font-weight: 650; letter-spacing: 0.01em;
+    text-decoration: none; white-space: nowrap;
+  }
+  .nav__links { display: none; gap: 1.375rem; font-size: 0.9375rem; }
+  @media (min-width: 48rem) { .nav__links { display: flex; } }
+  .nav__links a { color: var(--ink-2); text-decoration: none; }
+  .nav__links a:hover { color: var(--ink); }
+  .nav__end { margin-left: auto; display: flex; align-items: center; gap: 0.625rem; }
+  /* At 390px two nav buttons plus the wordmark overflowed. The secondary CTA drops
+     out first; it is repeated in the hero and again in the closing row. */
+  @media (max-width: 40rem) {
+    .nav__end .btn:not(.btn--solid) { display: none; }
+    .nav__in { gap: 0.75rem; }
+  }
+
+
+  /* ---- buttons ------------------------------------------------------------- */
+
+  .btn {
+    font: inherit; font-size: 0.9375rem; font-weight: 500;
+    padding: 0.5625rem 1.1875rem;
+    border-radius: var(--r-pill);
+    border: 1px solid var(--line-strong);
+    background: var(--surface); color: var(--ink);
+    text-decoration: none; white-space: nowrap;
+    display: inline-flex; align-items: center; gap: 0.4375rem;
+    cursor: pointer;
+  }
+  .btn--solid {
+    background: var(--accent); border-color: var(--accent);
+    color: var(--accent-ink); box-shadow: var(--shadow-sm);
+  }
+  .btn--solid:hover { background: var(--accent-hi); }
+  .btn .arw { font-size: 0.75rem; opacity: .8; }
+
+  /* ---- hero ---------------------------------------------------------------- */
+
+  .hero {
+    position: relative; isolation: isolate; overflow: hidden;
+    min-height: min(78vh, 44rem);
+    display: flex; flex-direction: column; justify-content: center;
+    padding-block: clamp(4rem, 9vw, 6.5rem);
+  }
+  .hero::before {
+    content: ""; position: absolute; top: -30%; right: -18%;
+    width: min(46rem, 85%); aspect-ratio: 1; z-index: -1; pointer-events: none;
+    background: radial-gradient(closest-side,
+      color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%);
+  }
+  .kicker {
+    font-size: 0.875rem; color: var(--ink-3); margin: 0 0 1.25rem;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .kicker .dot {
+    width: 0.4375rem; height: 0.4375rem; border-radius: 50%; background: var(--accent);
+  }
+  h1 {
+    font-size: clamp(2.5rem, 6.4vw, 4.5rem); font-weight: 600;
+    line-height: 1.02; letter-spacing: -0.03em; margin: 0;
+    max-width: 19ch; text-wrap: balance;
+  }
+  .lede {
+    margin: 1.5rem 0 0; max-width: 36rem;
+    font-size: clamp(1.0625rem, 1.4vw, 1.1875rem); line-height: 1.55;
+    color: var(--ink-2); text-wrap: pretty;
+  }
+  .row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2.25rem; }
+
+  /* ---- proof strip --------------------------------------------------------- */
+
+  .proof {
+    border-top: 1px solid var(--line);
+    padding-block: 2rem;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 2.5rem;
+  }
+  .proof__label {
+    font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--ink-3); margin: 0; max-width: 12ch;
+  }
+  .proof__logos {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;
+    flex: 1; min-width: 0;
+  }
+  .proof__logos img { height: 1.5rem; width: auto; opacity: .75; }
+
+  /* ---- bands & heads ------------------------------------------------------- */
+
+  .band { padding-block: clamp(3.5rem, 7vw, 6rem); border-top: 1px solid var(--line); }
+  .band--tint { background: var(--bg-tint); }
+
+  .head { text-align: center; max-width: 38rem; margin: 0 auto clamp(2.5rem, 5vw, 3.25rem); }
+  .eyebrow {
+    margin: 0 0 0.875rem; font-family: var(--font-mono); font-size: 0.75rem;
+    letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-3);
+  }
+  h2 {
+    font-size: clamp(1.75rem, 3.2vw, 2.5rem); font-weight: 600;
+    line-height: 1.14; letter-spacing: -0.024em; margin: 0; text-wrap: balance;
+  }
+  .head .sub { margin: 1rem 0 0; color: var(--ink-2); text-wrap: pretty; }
+
+  /* ---- cards --------------------------------------------------------------- */
+
+  .grid { display: grid; gap: 1.25rem; }
+  @media (min-width: 56rem) {
+    .grid--2 { grid-template-columns: repeat(2, 1fr); }
+    .grid--3 { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--r-card); box-shadow: var(--shadow-md);
+    overflow: hidden; display: flex; flex-direction: column;
+  }
+  /* The visual slot, sized and ready. Sits above a divider, like the reference. */
+  .card__visual {
+    aspect-ratio: 16 / 9;
+    background: var(--bg-tint);
+    border-bottom: 1px solid var(--line);
+    display: grid; place-items: center;
+    overflow: hidden;
+  }
+  .card__visual img, .card__visual svg { width: 100%; height: 100%; object-fit: cover; }
+  .card__body { padding: 1.625rem; }
+  .card__label {
+    display: flex; align-items: center; gap: 0.4375rem;
+    font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 0.75rem;
+  }
+  .card h3 {
+    margin: 0 0 0.5rem; font-size: 1.1875rem; font-weight: 600;
+    letter-spacing: -0.014em; line-height: 1.25;
+  }
+  .card p { margin: 0; color: var(--ink-2); font-size: 0.9375rem; }
+  .card p b { color: var(--ink); font-weight: 600; }
+  .card__more {
+    display: inline-flex; align-items: center; gap: 0.375rem;
+    margin-top: 1.125rem; font-size: 0.875rem; font-weight: 500;
+    color: var(--ink); text-decoration: none;
+  }
+  .card__more:hover { color: var(--accent); }
+
+  /* ---- contrast: the usual way vs this one --------------------------------- */
+
+  .swap { display: grid; gap: 0; margin-top: 2.5rem; }
+  .swap__row {
+    display: grid; gap: 0.5rem 2rem;
+    padding-block: 1.375rem;
+    border-top: 1px solid var(--line);
+    align-items: start;
+  }
+  .swap__row:last-child { border-bottom: 1px solid var(--line); }
+  @media (min-width: 50rem) {
+    .swap__row { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  }
+  .swap__was, .swap__now { display: flex; gap: 0.625rem; align-items: baseline; }
+  .swap__was { color: var(--ink-3); }
+  .swap__now { color: var(--ink); }
+  .swap__tick {
+    font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.08em;
+    text-transform: uppercase; flex: none; padding-top: 0.1875rem; min-width: 4.25rem;
+  }
+  .swap__was .swap__tick { color: var(--ink-3); }
+  .swap__now .swap__tick { color: var(--accent); }
+  .swap__row p { margin: 0; font-size: 1rem; }
+  .swap__now p b { font-weight: 600; }
+
+  /* ---- build log ----------------------------------------------------------- */
+
+  .log { max-width: 44rem; margin-inline: auto; list-style: none; padding: 0; }
+  .log li {
+    display: grid; gap: 0.25rem 1.5rem;
+    padding-block: 1.125rem; border-top: 1px solid var(--line);
+  }
+  @media (min-width: 40rem) { .log li { grid-template-columns: 7rem 1fr; } }
+  .log time {
+    font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-3);
+    font-variant-numeric: tabular-nums; padding-top: 0.125rem;
+  }
+  .log p { margin: 0; color: var(--ink-2); font-size: 0.9375rem; }
+
+  /* ---- quote --------------------------------------------------------------- */
+
+  .quote { max-width: 44rem; margin-inline: auto; text-align: center; }
+  .quote blockquote {
+    margin: 0; font-size: clamp(1.25rem, 2.2vw, 1.625rem);
+    line-height: 1.35; letter-spacing: -0.016em; text-wrap: pretty;
+  }
+  .quote figcaption { margin-top: 1.25rem; font-size: 0.875rem; color: var(--ink-3); }
+
+  /* ---- pricing ------------------------------------------------------------- */
+
+  .tier { display: flex; flex-direction: column; }
+  .tier__price {
+    font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; margin: 0.5rem 0 0;
+    font-variant-numeric: tabular-nums;
+  }
+  .tier__per { font-size: 0.875rem; color: var(--ink-3); }
+  .tier ul { list-style: none; margin: 1.25rem 0 0; padding: 0; display: grid; gap: 0.5rem; }
+  .tier li { font-size: 0.9375rem; color: var(--ink-2); padding-left: 1.25rem; position: relative; }
+  .tier li::before {
+    content: ""; position: absolute; left: 0; top: 0.625rem;
+    width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--accent);
+  }
+
+  /* ---- closing ------------------------------------------------------------- */
+
+  .close {
+    border-top: 1px solid var(--line);
+    padding-block: clamp(3rem, 6vw, 4.5rem);
+    display: flex; flex-wrap: wrap; align-items: center;
+    justify-content: space-between; gap: 1.5rem 2rem;
+  }
+  .close h2 { max-width: 24ch; }
+
+  /* ---- footer -------------------------------------------------------------- */
+
+  .foot { border-top: 1px solid var(--line); }
+  .foot__in {
+    padding-block: 2.75rem 3.25rem;
+    display: grid; gap: 2rem; font-size: 0.875rem;
+  }
+  @media (min-width: 52rem) { .foot__in { grid-template-columns: 2fr 1fr 1fr 1.2fr; } }
+  .foot h4 {
+    margin: 0 0 0.75rem; font-family: var(--font-mono); font-size: 0.6875rem;
+    letter-spacing: 0.08em; text-transform: uppercase; font-weight: 400; color: var(--ink-3);
+  }
+  .foot p { margin: 0 0 0.4375rem; color: var(--ink-3); }
+  .foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4375rem; }
+  .foot ul a { color: var(--ink-2); text-decoration: none; }
+  .foot ul a:hover { color: var(--ink); }
+  .foot__brand .mark { display: inline-block; margin-bottom: 0.625rem; }
+  .foot__brand p:first-of-type { color: var(--ink-2); }
+
+  /* ---- motion -------------------------------------------------------------- */
+
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      .reveal {
+        animation: rise linear both;
+        animation-timeline: view();
+        animation-range: entry 5% cover 26%;
+      }
+    }
+    .btn, .card { transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
+    .card:hover { transform: translateY(-2px); }
+    .btn--solid:hover { transform: translateY(-1px); }
+  }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(1.25rem); }
+    to   { opacity: 1; transform: none; }
+  }
