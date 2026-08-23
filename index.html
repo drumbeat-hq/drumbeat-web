@@ -1,11 +1,364 @@
-<!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Drumbeat</title></head>
-<body>
-  <main>
-    <h1>Drumbeat</h1>
-    <p>AI-first annual planning for growing companies. Coming soon.</p>
-  </main>
-</body>
-</html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Drumbeat</title>
+<link rel="stylesheet" href="styles/site.css">
+
+<!-- ===========================================================================
+     SECTIONS AWAITING CONTENT — each is built, styled and commented out below.
+     Uncomment the block when you have the material. Nothing else needs changing.
+
+       1. PROOF STRIP        search "SECTION: PROOF"      needs 5-7 customer logos as local SVGs
+       2. CARD VISUALS       search "SECTION: SPOTLIGHT"  needs 2 product graphics (SVG or Rive)
+       3. TESTIMONIAL        search "SECTION: QUOTE"      needs 1 named quote + written consent
+       4. PRICING            search "SECTION: PRICING"    needs approved public pricing
+       5. FOOTER LINKS       search "SECTION: FOOTER"     needs legal pages before linking
+
+     THREE VALUES TO SET when they exist — every occurrence is marked TODO:
+       • contact address     (currently href="#")
+       • demo booking URL    (currently href="#")
+       • canonical domain    (for the og: tags, not yet added)
+     =========================================================================== -->
+
+
+
+<nav class="nav">
+  <div class="nav__in">
+    <a class="mark" href="#top">Drumbeat</a>
+    <div class="nav__links">
+      <a href="#what">What it is for</a>
+      <a href="#how">How it behaves</a>
+    </div>
+    <div class="nav__end">
+      <!-- TODO: set href to the booking URL when one exists -->
+      <a class="btn" href="#">Book a demo</a>
+      <!-- TODO: set href to mailto: the real address when the domain email exists -->
+      <a class="btn btn--solid" href="#">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<div class="rails" id="top">
+
+  <section class="hero inner">
+    <p class="kicker"><span class="dot"></span> Annual planning, being rebuilt</p>
+    <h1>The hand-off is where plans die.</h1>
+    <p class="lede">Drumbeat is being built to carry a growth goal all the way down,
+      as one model instead of five spreadsheets.</p>
+    <div class="row">
+      <a class="btn btn--solid" href="#">Get in touch <span class="arw">&#8599;</span></a>
+      <a class="btn" href="#how">See how it behaves</a>
+    </div>
+  </section>
+
+  <!-- SECTION: PROOF ==========================================================
+       Uncomment when you have permission to name customers. Logos must be LOCAL
+       SVG files committed to this repo — never hotlinked, or you leak visitor IPs
+       to their CDN. Check each pilot agreement first: using a name or logo needs
+       their written consent.
+
+  <section class="proof inner reveal">
+    <p class="proof__label">Planning with</p>
+    <div class="proof__logos">
+      <img src="assets/logos/one.svg"   alt="Customer name">
+      <img src="assets/logos/two.svg"   alt="Customer name">
+      <img src="assets/logos/three.svg" alt="Customer name">
+    </div>
+  </section>
+  ========================================================================== -->
+
+  <section class="band band--tint inner reveal">
+    <div class="head">
+      <p class="eyebrow">The problem</p>
+      <h2>The strategy is sound. The hand-off is where it dies.</h2>
+      <p class="sub">Growth strategy is built with the board over months. It reaches the people
+        who have to land it with weeks to go — and each function plans its own part in its own
+        spreadsheet, none of them interlocking.</p>
+    </div>
+  </section>
+
+  <section class="band inner reveal" id="what">
+    <div class="head">
+      <p class="eyebrow">What it is for</p>
+      <h2>One goal, carried the whole way down.</h2>
+      <p class="sub">Nobody lacks the judgment. What is missing is a model that holds all of it
+        at once, and keeps holding it after the year starts.</p>
+    </div>
+    <div class="grid grid--3">
+      <article class="card">
+        <div class="card__body">
+          <p class="card__label">Step one</p>
+          <h3>Cascade the goal</h3>
+          <p>From a growth number down to the segments, the people and the initiatives that have
+            to produce it.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__body">
+          <p class="card__label">Step two</p>
+          <h3>Test whether it is achievable</h3>
+          <p>Against how long hiring actually takes, how long ramping actually takes, and what
+            actually churns.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__body">
+          <p class="card__label">Step three</p>
+          <h3>Keep everyone on one plan</h3>
+          <p>So the version each function is working from is the same version, still, in March.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="band inner reveal" id="different">
+    <div class="head">
+      <p class="eyebrow">A different approach</p>
+      <h2>Four places this works the other way round.</h2>
+      <p class="sub">Not a longer feature list. The same four decisions, made differently.</p>
+    </div>
+    <div class="swap">
+      <div class="swap__row">
+        <div class="swap__was">
+          <span class="swap__tick">Usually</span>
+          <p>Each function plans in its own spreadsheet, and none of them reconcile.</p>
+        </div>
+        <div class="swap__now">
+          <span class="swap__tick">Here</span>
+          <p><b>One model everybody plans in</b>, so the interlock is structural rather than a
+            meeting.</p>
+        </div>
+      </div>
+      <div class="swap__row">
+        <div class="swap__was">
+          <span class="swap__tick">Usually</span>
+          <p>A number appears in a cell and you are expected to trust it.</p>
+        </div>
+        <div class="swap__now">
+          <span class="swap__tick">Here</span>
+          <p><b>Every number says where it came from</b> — measured, asserted by you, or a
+            benchmark standing in.</p>
+        </div>
+      </div>
+      <div class="swap__row">
+        <div class="swap__was">
+          <span class="swap__tick">Usually</span>
+          <p>Top-down and bottom-up disagree, and the difference is quietly spread around until
+            it disappears.</p>
+        </div>
+        <div class="swap__now">
+          <span class="swap__tick">Here</span>
+          <p><b>The gap stays on screen and stays owned.</b> Closing it is a decision somebody
+            records, not a rounding.</p>
+        </div>
+      </div>
+      <div class="swap__row">
+        <div class="swap__was">
+          <span class="swap__tick">Usually</span>
+          <p>You do not know something, so a plausible figure goes in and nobody remembers it
+            was a guess.</p>
+        </div>
+        <div class="swap__now">
+          <span class="swap__tick">Here</span>
+          <p><b>Say you do not know.</b> It is marked unmeasured, and it stays marked until
+            somebody measures it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: BUILD LOG ======================================================
+       The only honest momentum signal available before you have customers: dated,
+       specific entries showing the thing is moving. Uncomment and add real entries
+       — three is enough to start, and stale is worse than absent, so only keep it
+       if you will update it monthly.
+
+       Write what changed in the product, in the reader's language. No ticket ids
+       (the commit-msg hook blocks those anyway), no internal decision references,
+       no roadmap promises about what comes next.
+
+  <section class="band band--tint inner reveal">
+    <div class="head">
+      <p class="eyebrow">Build log</p>
+      <h2>What changed recently.</h2>
+    </div>
+    <ul class="log">
+      <li>
+        <time datetime="2026-08">August 2026</time>
+        <p>One sentence on what a reader would notice.</p>
+      </li>
+      <li>
+        <time datetime="2026-07">July 2026</time>
+        <p>One sentence on what a reader would notice.</p>
+      </li>
+    </ul>
+  </section>
+  ========================================================================== -->
+
+  <!-- SECTION: SPOTLIGHT ======================================================
+       The reference layout's centrepiece: two large cards, each with a visual on
+       top. The markup and the .card__visual slot are ready — a 16:9 area that
+       accepts an <img>, an inline <svg>, or a Rive canvas. Uncomment once you
+       have two graphics. Keep them abstract: a real screenshot would disclose
+       product behaviour, and it goes stale the moment a screen changes.
+
+  <section class="band band--tint inner reveal">
+    <div class="head">
+      <p class="eyebrow">In the product</p>
+      <h2>Two things worth seeing.</h2>
+    </div>
+    <div class="grid grid--2">
+      <article class="card">
+        <div class="card__visual"><img src="assets/spotlight-one.svg" alt=""></div>
+        <div class="card__body">
+          <p class="card__label">Name it here</p>
+          <h3>Headline for the first one</h3>
+          <p>Two lines on what it does for the person reading.</p>
+          <a class="card__more" href="#">Read more <span class="arw">&#8599;</span></a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__visual"><img src="assets/spotlight-two.svg" alt=""></div>
+        <div class="card__body">
+          <p class="card__label">Name it here</p>
+          <h3>Headline for the second one</h3>
+          <p>Two lines on what it does for the person reading.</p>
+          <a class="card__more" href="#">Read more <span class="arw">&#8599;</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+  ========================================================================== -->
+
+  <section class="band band--tint inner reveal" id="how">
+    <div class="head">
+      <p class="eyebrow">How it behaves</p>
+      <h2>The parts you would be right to be sceptical about.</h2>
+      <p class="sub">Planning software earns trust by showing its work, not by asserting it.</p>
+    </div>
+    <div class="grid grid--2">
+      <article class="card">
+        <div class="card__body">
+          <p class="card__label">Deterministic</p>
+          <h3>The numbers do not drift.</h3>
+          <p>The numbers are <b>deterministic</b>. A language model helps you map and describe
+            your data. It never produces a number.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__body">
+          <p class="card__label">Confirmed, not assumed</p>
+          <h3>Nothing is filled in behind you.</h3>
+          <p><b>Nothing becomes a number without you confirming it.</b> If you do not know
+            something, say so — it is marked unmeasured rather than quietly guessed.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__body">
+          <p class="card__label">Gaps stay visible</p>
+          <h3>Disagreement is shown, not smoothed.</h3>
+          <p>Where the top-down and the bottom-up disagree, <b>the difference is shown and
+            owned</b> — never spread across the levers until it disappears.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__body">
+          <p class="card__label">Provenance</p>
+          <h3>Every number says where it came from.</h3>
+          <p>Measured from your data, asserted by you, or a benchmark standing in — and which
+            one it is never stops being visible.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SECTION: QUOTE ==========================================================
+       One named quote outperforms three anonymous ones. Needs the person's
+       written sign-off on the exact wording, their name, role and company.
+
+  <section class="band inner reveal">
+    <figure class="quote">
+      <blockquote>The sentence they actually said, trimmed but not rewritten.</blockquote>
+      <figcaption>Name, Role &middot; Company</figcaption>
+    </figure>
+  </section>
+  ========================================================================== -->
+
+  <!-- SECTION: PRICING ========================================================
+       Transparent pricing has been B2B buyers' number-one request four years
+       running (TrustRadius, n=1,862, Jan 2026), so this is the highest-value
+       block on the page once you can publish it. Three tiers fit the grid.
+       Publishing prices needs a recorded decision first.
+
+  <section class="band band--tint inner reveal">
+    <div class="head">
+      <p class="eyebrow">Pricing</p>
+      <h2>Per company, never per seat.</h2>
+      <p class="sub">Everyone who needs to be in the plan is included.</p>
+    </div>
+    <div class="grid grid--3">
+      <article class="card tier">
+        <div class="card__body">
+          <p class="card__label">Tier name</p>
+          <p class="tier__price">$000<span class="tier__per"> / month</span></p>
+          <ul><li>What is included</li><li>What is included</li><li>What is included</li></ul>
+        </div>
+      </article>
+      <article class="card tier">
+        <div class="card__body">
+          <p class="card__label">Tier name</p>
+          <p class="tier__price">$000<span class="tier__per"> / month</span></p>
+          <ul><li>What is included</li><li>What is included</li><li>What is included</li></ul>
+        </div>
+      </article>
+      <article class="card tier">
+        <div class="card__body">
+          <p class="card__label">Tier name</p>
+          <p class="tier__price">Custom</p>
+          <ul><li>What is included</li><li>What is included</li><li>What is included</li></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+  ========================================================================== -->
+
+  <section class="close inner reveal">
+    <h2>Plan the year from measured facts, and nothing pretending to be either.</h2>
+    <div class="row" style="margin-top:0">
+      <a class="btn btn--solid" href="#">Get in touch <span class="arw">&#8599;</span></a>
+      <a class="btn" href="#">Book a demo</a>
+    </div>
+  </section>
+
+  <!-- SECTION: FOOTER — link lists are in place but unlinked. Point each at a
+       real page as it exists; delete any line that never will. -->
+  <footer class="foot">
+    <div class="foot__in inner">
+      <div class="foot__brand">
+        <span class="mark">Drumbeat</span>
+        <p>Annual planning, carried all the way down.</p>
+        <p>Drumbeat is a working name.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#what">What it is for</a></li>
+          <li><a href="#how">How it behaves</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li>Privacy policy</li>
+          <li>Terms of use</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</div>

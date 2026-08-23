@@ -7,8 +7,14 @@ a later commit deletes. Both authors' email addresses are already in its history
 
 ## What this repo is
 
-A minimal "coming soon" landing page: plain HTML, no framework, no build step, no dependencies. That is
-the design, not a stage it is growing out of.
+A single-page landing site: plain HTML and one stylesheet, no framework, no build step, no
+dependencies, and no JavaScript. That is the design, not a stage it is growing out of.
+
+Several sections — customer logos, product graphics, a testimonial, pricing, a build log — are written
+and styled but commented out in `index.html`, each carrying a note on what it needs before it can be
+uncommented. Filling those in is not a design task. Note that a theme toggle was deliberately left
+out: it needs a `<script>` tag, and the Definition of Ready below forbids one without a recorded
+decision.
 
 **It is not deployed yet.** GitHub Pages is not enabled — `gh api repos/sigaramendrum/drumbeat-web/pages`
 returns 404, and `README.md` lists enabling it as a future step. Do not write instructions or checks
