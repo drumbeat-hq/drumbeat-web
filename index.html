@@ -1,364 +1,119 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Drumbeat</title>
-<link rel="stylesheet" href="styles/site.css">
-
-<!-- ===========================================================================
-     SECTIONS AWAITING CONTENT — each is built, styled and commented out below.
-     Uncomment the block when you have the material. Nothing else needs changing.
-
-       1. PROOF STRIP        search "SECTION: PROOF"      needs 5-7 customer logos as local SVGs
-       2. CARD VISUALS       search "SECTION: SPOTLIGHT"  needs 2 product graphics (SVG or Rive)
-       3. TESTIMONIAL        search "SECTION: QUOTE"      needs 1 named quote + written consent
-       4. PRICING            search "SECTION: PRICING"    needs approved public pricing
-       5. FOOTER LINKS       search "SECTION: FOOTER"     needs legal pages before linking
-
-     THREE VALUES TO SET when they exist — every occurrence is marked TODO:
-       • contact address     (currently href="#")
-       • demo booking URL    (currently href="#")
-       • canonical domain    (for the og: tags, not yet added)
-     =========================================================================== -->
-
-
-
-<nav class="nav">
-  <div class="nav__in">
-    <a class="mark" href="#top">Drumbeat</a>
-    <div class="nav__links">
-      <a href="#what">What it is for</a>
-      <a href="#how">How it behaves</a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Drumbeat turns a growth goal and the facts behind it into one clear, pressure-tested GTM plan.">
+  <title>Drumbeat — Build a GTM plan that holds together</title>
+  <link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+  <!-- CTA destinations stay as placeholders until public routes are approved. -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Drumbeat home"><span class="beat" aria-hidden="true"><i></i><i></i><i></i><i></i></span>drumbeat</a>
+      <div class="nav__links"><a href="#product">Product</a><a href="#principles">Principles</a></div>
+      <a class="button button--small" href="#contact">Join the early cohort <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="nav__end">
-      <!-- TODO: set href to the booking URL when one exists -->
-      <a class="btn" href="#">Book a demo</a>
-      <!-- TODO: set href to mailto: the real address when the domain email exists -->
-      <a class="btn btn--solid" href="#">Get in touch</a>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="rails" id="top">
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero__copy">
+        <p class="eyebrow"><span></span> A new way to build the annual plan</p>
+        <h1>Build a GTM plan that <em>holds together.</em></h1>
+        <p class="hero__lede">Drumbeat guides your team from a growth goal and scattered inputs to one clear plan—then pressure-tests the assumptions before they become commitments.</p>
+        <div class="actions"><a class="button" href="#contact">Join the early cohort <span>↗</span></a><a class="text-link" href="#product">See how it works <span>↓</span></a></div>
+      </div>
 
-  <section class="hero inner">
-    <p class="kicker"><span class="dot"></span> Annual planning, being rebuilt</p>
-    <h1>The hand-off is where plans die.</h1>
-    <p class="lede">Drumbeat is being built to carry a growth goal all the way down,
-      as one model instead of five spreadsheets.</p>
-    <div class="row">
-      <a class="btn btn--solid" href="#">Get in touch <span class="arw">&#8599;</span></a>
-      <a class="btn" href="#how">See how it behaves</a>
-    </div>
-  </section>
-
-  <!-- SECTION: PROOF ==========================================================
-       Uncomment when you have permission to name customers. Logos must be LOCAL
-       SVG files committed to this repo — never hotlinked, or you leak visitor IPs
-       to their CDN. Check each pilot agreement first: using a name or logo needs
-       their written consent.
-
-  <section class="proof inner reveal">
-    <p class="proof__label">Planning with</p>
-    <div class="proof__logos">
-      <img src="assets/logos/one.svg"   alt="Customer name">
-      <img src="assets/logos/two.svg"   alt="Customer name">
-      <img src="assets/logos/three.svg" alt="Customer name">
-    </div>
-  </section>
-  ========================================================================== -->
-
-  <section class="band band--tint inner reveal">
-    <div class="head">
-      <p class="eyebrow">The problem</p>
-      <h2>The strategy is sound. The hand-off is where it dies.</h2>
-      <p class="sub">Growth strategy is built with the board over months. It reaches the people
-        who have to land it with weeks to go — and each function plans its own part in its own
-        spreadsheet, none of them interlocking.</p>
-    </div>
-  </section>
-
-  <section class="band inner reveal" id="what">
-    <div class="head">
-      <p class="eyebrow">What it is for</p>
-      <h2>One goal, carried the whole way down.</h2>
-      <p class="sub">Nobody lacks the judgment. What is missing is a model that holds all of it
-        at once, and keeps holding it after the year starts.</p>
-    </div>
-    <div class="grid grid--3">
-      <article class="card">
-        <div class="card__body">
-          <p class="card__label">Step one</p>
-          <h3>Cascade the goal</h3>
-          <p>From a growth number down to the segments, the people and the initiatives that have
-            to produce it.</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__body">
-          <p class="card__label">Step two</p>
-          <h3>Test whether it is achievable</h3>
-          <p>Against how long hiring actually takes, how long ramping actually takes, and what
-            actually churns.</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__body">
-          <p class="card__label">Step three</p>
-          <h3>Keep everyone on one plan</h3>
-          <p>So the version each function is working from is the same version, still, in March.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="band inner reveal" id="different">
-    <div class="head">
-      <p class="eyebrow">A different approach</p>
-      <h2>Four places this works the other way round.</h2>
-      <p class="sub">Not a longer feature list. The same four decisions, made differently.</p>
-    </div>
-    <div class="swap">
-      <div class="swap__row">
-        <div class="swap__was">
-          <span class="swap__tick">Usually</span>
-          <p>Each function plans in its own spreadsheet, and none of them reconcile.</p>
-        </div>
-        <div class="swap__now">
-          <span class="swap__tick">Here</span>
-          <p><b>One model everybody plans in</b>, so the interlock is structural rather than a
-            meeting.</p>
+      <div class="workspace" aria-label="Illustration of a Drumbeat planning workspace">
+        <div class="workspace__bar"><span><b aria-hidden="true">|||</b> drumbeat</span><span>Annual plan⌄</span><i>SR</i></div>
+        <div class="workspace__body">
+          <aside aria-hidden="true"><b>Overview</b><span>Inputs</span><span>Plan</span><span>Assumptions</span><span>Review</span></aside>
+          <div class="plan">
+            <div class="plan__head"><div><small>PLAN HEALTH</small><strong>Ready to review</strong></div><span class="alert"><i></i> 3 items need attention</span></div>
+            <div class="metrics">
+              <div><span>Growth goal</span><b>Confirmed</b><small>Set by your team</small></div>
+              <div><span>Bottom-up plan</span><b>Calculated</b><small>From current inputs</small></div>
+              <div class="metrics__gap"><span>Reconciliation</span><b>Gap found</b><small>Needs an owner</small></div>
+            </div>
+            <div class="plan__grid">
+              <div class="chart-card">
+                <div class="card-head"><b>Plan shape</b><small>Goal vs. capacity</small></div>
+                <div class="chart" aria-hidden="true">
+                  <label>Goal</label><i class="bar b1"></i><i class="bar b2"></i><i class="bar b3"></i><i class="bar b4"></i><i class="bar b5"></i><i class="bar b6"></i>
+                  <svg viewBox="0 0 420 150" preserveAspectRatio="none"><path d="M4 131 C68 127,86 112,142 108 S226 75,278 70 S350 39,416 17"/></svg>
+                </div>
+                <div class="quarters"><span>Q1</span><span>Q2</span><span>Q3</span><span>Q4</span></div>
+              </div>
+              <div class="critic-card"><p><i></i> PLAN CRITIC</p><h3>One assumption is doing too much work.</h3><span>The current plan depends on an unconfirmed change. Review the input or assign an owner before locking it.</span><a href="#principles">Review assumption →</a></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="swap__row">
-        <div class="swap__was">
-          <span class="swap__tick">Usually</span>
-          <p>A number appears in a cell and you are expected to trust it.</p>
-        </div>
-        <div class="swap__now">
-          <span class="swap__tick">Here</span>
-          <p><b>Every number says where it came from</b> — measured, asserted by you, or a
-            benchmark standing in.</p>
+      <p class="hero__note">No black-box arithmetic. No plausible numbers invented to fill a gap.</p>
+    </section>
+
+    <section class="problem shell reveal">
+      <p class="section-index">01 / The problem</p>
+      <div><h2>The strategy is sound.<br><em>The handoff breaks it.</em></h2><p>A growth goal passes through finance, sales, marketing, and customer teams. Each group rebuilds its part in a different spreadsheet. By the time the plan reaches the people delivering it, the assumptions no longer connect.</p></div>
+    </section>
+
+    <section class="workflow" id="product">
+      <div class="shell">
+        <div class="section-head reveal"><p class="section-index">02 / How it works</p><h2>From scattered inputs to<br><em>one defensible plan.</em></h2></div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step__number">01</span>
+            <div class="step__visual chat" aria-hidden="true"><span>What are you trying to achieve?</span><span>Build the plan around our growth goal.</span><span>Good. Let’s start with what you know.</span></div>
+            <div class="step__copy"><p class="tag">Guide</p><h3>Start with a conversation, not a blank model.</h3><p>The coach asks targeted questions, brings in the data you already have, and shapes the setup around how your team actually plans.</p></div>
+          </article>
+          <article class="step reveal">
+            <span class="step__number">02</span>
+            <div class="step__visual cascade" aria-hidden="true"><div>Growth goal</div><i></i><p><span>New</span><span>Expand</span><span>Retain</span></p><small><b>Sales</b><b>Marketing</b><b>Customer</b></small></div>
+            <div class="step__copy"><p class="tag">Connect</p><h3>Carry one goal through the whole plan.</h3><p>See how the goal translates into the work beneath it. Top-down ambition and bottom-up reality stay visible in the same model.</p></div>
+          </article>
+          <article class="step reveal">
+            <span class="step__number">03</span>
+            <div class="step__visual review" aria-hidden="true"><div><i>✓</i><span><b>Revenue bridge</b><small>Inputs reconcile</small></span></div><div><i>!</i><span><b>Capacity assumption</b><small>Confirmation needed</small></span></div><div><i>✓</i><span><b>Source coverage</b><small>Every input traced</small></span></div></div>
+            <div class="step__copy"><p class="tag">Pressure-test</p><h3>Find the fragile parts before the year starts.</h3><p>The critic flags gaps, conflicts, and aggressive assumptions. It tells you what needs a decision without silently changing the plan.</p></div>
+          </article>
         </div>
       </div>
-      <div class="swap__row">
-        <div class="swap__was">
-          <span class="swap__tick">Usually</span>
-          <p>Top-down and bottom-up disagree, and the difference is quietly spread around until
-            it disappears.</p>
+    </section>
+
+    <section class="interactive shell" aria-labelledby="model-title">
+      <div class="section-head reveal"><p class="section-index">03 / Explore the model</p><h2 id="model-title">Follow a number back<br><em>to its source.</em></h2></div>
+      <div class="model reveal">
+        <div class="model__controls">
+          <a href="#measured"><span>01</span> Measured input</a><a href="#asserted"><span>02</span> Team judgment</a><a href="#gap"><span>03</span> Visible gap</a>
         </div>
-        <div class="swap__now">
-          <span class="swap__tick">Here</span>
-          <p><b>The gap stays on screen and stays owned.</b> Closing it is a decision somebody
-            records, not a rounding.</p>
+        <div class="model__stage">
+          <div class="model__node model__node--source" id="measured"><small>FROM YOUR DATA</small><b>Measured input</b><span>Source stays attached</span></div>
+          <i class="connector c1" aria-hidden="true"></i>
+          <div class="model__node model__node--source" id="asserted"><small>CONFIRMED BY YOU</small><b>Team judgment</b><span>Owner stays attached</span></div>
+          <i class="connector c2" aria-hidden="true"></i>
+          <div class="model__node model__node--engine"><small>DETERMINISTIC ENGINE</small><b>One connected plan</b><span>Same inputs, same result</span></div>
+          <i class="connector c3" aria-hidden="true"></i>
+          <div class="model__node model__node--gap" id="gap"><small>PLAN CRITIC</small><b>Gap stays visible</b><span>Resolve it—never smear it</span></div>
         </div>
+        <p class="model__hint">Select a stage to trace how context travels through the plan.</p>
       </div>
-      <div class="swap__row">
-        <div class="swap__was">
-          <span class="swap__tick">Usually</span>
-          <p>You do not know something, so a plausible figure goes in and nobody remembers it
-            was a guess.</p>
-        </div>
-        <div class="swap__now">
-          <span class="swap__tick">Here</span>
-          <p><b>Say you do not know.</b> It is marked unmeasured, and it stays marked until
-            somebody measures it.</p>
-        </div>
+    </section>
+
+    <section class="principles shell" id="principles">
+      <div class="section-head reveal"><p class="section-index">04 / Built for trust</p><h2>The model should show<br><em>its working.</em></h2></div>
+      <div class="principle-grid">
+        <article class="principle reveal"><span>Measured</span><h3>Every number keeps its source.</h3><p>See what came from your data, what your team asserted, and where a benchmark is standing in.</p></article>
+        <article class="principle reveal"><span>Deterministic</span><h3>The AI never does the arithmetic.</h3><p>AI helps guide and explain. A deterministic engine calculates the plan, so the same inputs return the same result.</p></article>
+        <article class="principle reveal"><span>Honest</span><h3>Unknown stays unknown.</h3><p>Missing information remains visible. Nothing quietly becomes a confident-looking number behind your back.</p></article>
+        <article class="principle reveal"><span>Owned</span><h3>Gaps become decisions.</h3><p>When ambition and capacity disagree, the difference stays on screen until someone resolves it.</p></article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SECTION: BUILD LOG ======================================================
-       The only honest momentum signal available before you have customers: dated,
-       specific entries showing the thing is moving. Uncomment and add real entries
-       — three is enough to start, and stale is worse than absent, so only keep it
-       if you will update it monthly.
+    <section class="closing" id="contact"><div class="pulse" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="shell closing__inner reveal"><p class="eyebrow"><span></span> Drumbeat is taking shape</p><h2>Make the plan make sense<br><em>before it becomes a promise.</em></h2><p>We’re working with a small early cohort to build a better annual planning experience.</p><a class="button button--light" href="#">Join the early cohort <span>↗</span></a></div></section>
+  </main>
 
-       Write what changed in the product, in the reader's language. No ticket ids
-       (the commit-msg hook blocks those anyway), no internal decision references,
-       no roadmap promises about what comes next.
-
-  <section class="band band--tint inner reveal">
-    <div class="head">
-      <p class="eyebrow">Build log</p>
-      <h2>What changed recently.</h2>
-    </div>
-    <ul class="log">
-      <li>
-        <time datetime="2026-08">August 2026</time>
-        <p>One sentence on what a reader would notice.</p>
-      </li>
-      <li>
-        <time datetime="2026-07">July 2026</time>
-        <p>One sentence on what a reader would notice.</p>
-      </li>
-    </ul>
-  </section>
-  ========================================================================== -->
-
-  <!-- SECTION: SPOTLIGHT ======================================================
-       The reference layout's centrepiece: two large cards, each with a visual on
-       top. The markup and the .card__visual slot are ready — a 16:9 area that
-       accepts an <img>, an inline <svg>, or a Rive canvas. Uncomment once you
-       have two graphics. Keep them abstract: a real screenshot would disclose
-       product behaviour, and it goes stale the moment a screen changes.
-
-  <section class="band band--tint inner reveal">
-    <div class="head">
-      <p class="eyebrow">In the product</p>
-      <h2>Two things worth seeing.</h2>
-    </div>
-    <div class="grid grid--2">
-      <article class="card">
-        <div class="card__visual"><img src="assets/spotlight-one.svg" alt=""></div>
-        <div class="card__body">
-          <p class="card__label">Name it here</p>
-          <h3>Headline for the first one</h3>
-          <p>Two lines on what it does for the person reading.</p>
-          <a class="card__more" href="#">Read more <span class="arw">&#8599;</span></a>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__visual"><img src="assets/spotlight-two.svg" alt=""></div>
-        <div class="card__body">
-          <p class="card__label">Name it here</p>
-          <h3>Headline for the second one</h3>
-          <p>Two lines on what it does for the person reading.</p>
-          <a class="card__more" href="#">Read more <span class="arw">&#8599;</span></a>
-        </div>
-      </article>
-    </div>
-  </section>
-  ========================================================================== -->
-
-  <section class="band band--tint inner reveal" id="how">
-    <div class="head">
-      <p class="eyebrow">How it behaves</p>
-      <h2>The parts you would be right to be sceptical about.</h2>
-      <p class="sub">Planning software earns trust by showing its work, not by asserting it.</p>
-    </div>
-    <div class="grid grid--2">
-      <article class="card">
-        <div class="card__body">
-          <p class="card__label">Deterministic</p>
-          <h3>The numbers do not drift.</h3>
-          <p>The numbers are <b>deterministic</b>. A language model helps you map and describe
-            your data. It never produces a number.</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__body">
-          <p class="card__label">Confirmed, not assumed</p>
-          <h3>Nothing is filled in behind you.</h3>
-          <p><b>Nothing becomes a number without you confirming it.</b> If you do not know
-            something, say so — it is marked unmeasured rather than quietly guessed.</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__body">
-          <p class="card__label">Gaps stay visible</p>
-          <h3>Disagreement is shown, not smoothed.</h3>
-          <p>Where the top-down and the bottom-up disagree, <b>the difference is shown and
-            owned</b> — never spread across the levers until it disappears.</p>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__body">
-          <p class="card__label">Provenance</p>
-          <h3>Every number says where it came from.</h3>
-          <p>Measured from your data, asserted by you, or a benchmark standing in — and which
-            one it is never stops being visible.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- SECTION: QUOTE ==========================================================
-       One named quote outperforms three anonymous ones. Needs the person's
-       written sign-off on the exact wording, their name, role and company.
-
-  <section class="band inner reveal">
-    <figure class="quote">
-      <blockquote>The sentence they actually said, trimmed but not rewritten.</blockquote>
-      <figcaption>Name, Role &middot; Company</figcaption>
-    </figure>
-  </section>
-  ========================================================================== -->
-
-  <!-- SECTION: PRICING ========================================================
-       Transparent pricing has been B2B buyers' number-one request four years
-       running (TrustRadius, n=1,862, Jan 2026), so this is the highest-value
-       block on the page once you can publish it. Three tiers fit the grid.
-       Publishing prices needs a recorded decision first.
-
-  <section class="band band--tint inner reveal">
-    <div class="head">
-      <p class="eyebrow">Pricing</p>
-      <h2>Per company, never per seat.</h2>
-      <p class="sub">Everyone who needs to be in the plan is included.</p>
-    </div>
-    <div class="grid grid--3">
-      <article class="card tier">
-        <div class="card__body">
-          <p class="card__label">Tier name</p>
-          <p class="tier__price">$000<span class="tier__per"> / month</span></p>
-          <ul><li>What is included</li><li>What is included</li><li>What is included</li></ul>
-        </div>
-      </article>
-      <article class="card tier">
-        <div class="card__body">
-          <p class="card__label">Tier name</p>
-          <p class="tier__price">$000<span class="tier__per"> / month</span></p>
-          <ul><li>What is included</li><li>What is included</li><li>What is included</li></ul>
-        </div>
-      </article>
-      <article class="card tier">
-        <div class="card__body">
-          <p class="card__label">Tier name</p>
-          <p class="tier__price">Custom</p>
-          <ul><li>What is included</li><li>What is included</li><li>What is included</li></ul>
-        </div>
-      </article>
-    </div>
-  </section>
-  ========================================================================== -->
-
-  <section class="close inner reveal">
-    <h2>Plan the year from measured facts, and nothing pretending to be either.</h2>
-    <div class="row" style="margin-top:0">
-      <a class="btn btn--solid" href="#">Get in touch <span class="arw">&#8599;</span></a>
-      <a class="btn" href="#">Book a demo</a>
-    </div>
-  </section>
-
-  <!-- SECTION: FOOTER — link lists are in place but unlinked. Point each at a
-       real page as it exists; delete any line that never will. -->
-  <footer class="foot">
-    <div class="foot__in inner">
-      <div class="foot__brand">
-        <span class="mark">Drumbeat</span>
-        <p>Annual planning, carried all the way down.</p>
-        <p>Drumbeat is a working name.</p>
-      </div>
-      <div>
-        <h4>Product</h4>
-        <ul>
-          <li><a href="#what">What it is for</a></li>
-          <li><a href="#how">How it behaves</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li>Privacy policy</li>
-          <li>Terms of use</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li>Get in touch</li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-</div>
+  <footer class="footer shell"><a class="brand" href="#top"><span class="beat" aria-hidden="true"><i></i><i></i><i></i><i></i></span>drumbeat</a><p>One goal. One model. A plan that holds together.</p><p>Drumbeat is a working name.</p></footer>
+</body>
+</html>
