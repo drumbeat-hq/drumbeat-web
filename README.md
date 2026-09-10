@@ -5,7 +5,23 @@ Public landing site for Drumbeat.
 **PUBLIC repo.** No strategy, IP, pilot, or roadmap content — marketing/landing only.
 Anything sensitive belongs in the private `drumbeat` repo, never here.
 
-Deploy (when ready): GitHub -> Settings -> Pages -> Deploy from branch (main / root).
+Published site: **https://drumbeat-hq.github.io/drumbeat-web/**.
+GitHub Pages deploys through `.github/workflows/pages.yml` on pushes to `main`
+or a manual workflow run. Local edits appear publicly only after they are pushed and deployed.
+
+## Local preview
+
+The fixed local preview address is **http://127.0.0.1:5199/**.
+Run `python3 -m http.server 5199 --bind 127.0.0.1` from the repository root.
+Keep this port unchanged across sessions; reuse the existing preview server when it is running.
+Refresh the browser after edits to see changes; no build step is required.
+The page uses only HTML and CSS, with system fonts and no external asset requests.
+On desktop, native CSS scroll animations expand the workspace, move a highlight around
+its frame, reveal the problem headline, and trace the plan's connections. On larger screens,
+the walkthrough keeps its illustration in place as the three steps scroll alongside it.
+The principles use a bento grid with inline SVG illustrations. Motion follows scrolling;
+there are no continuously looping effects. Mobile, reduced-motion preferences, and browsers
+without scroll animation support receive the complete static layout.
 
 ## Working in this repo
 
