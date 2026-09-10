@@ -16,9 +16,10 @@ uncommented. Filling those in is not a design task. Note that a theme toggle was
 out: it needs a `<script>` tag, and the Definition of Ready below forbids one without a recorded
 decision.
 
-**It is not deployed yet.** GitHub Pages is not enabled — `gh api repos/sigaramendrum/drumbeat-web/pages`
-returns 404, and `README.md` lists enabling it as a future step. Do not write instructions or checks
-that assume a live site until that changes.
+**GitHub Pages is enabled**, verified through the repository's Pages API on 2026-09-10.
+The public URL is `https://drumbeat-hq.github.io/drumbeat-web/`. Deployment uses
+`.github/workflows/pages.yml` on pushes to `main` or a manual workflow run. Local changes are
+not published until pushed and deployed; the fixed local preview address is documented below.
 
 ## The rule that matters most
 
@@ -78,6 +79,16 @@ So: rely on push protection, not on a green scan.
 This repo is a **publication surface, not a source.** Nothing originates here except markup.
 
 ## Design principles
+
+### Local preview address
+
+The user has fixed this repository's local preview address at `http://127.0.0.1:5199/`.
+Always use port **5199** across sessions. Start the server from this repository's root with
+`python3 -m http.server 5199 --bind 127.0.0.1`. If the port is occupied, verify whether it is
+already serving this repository and reuse that server. Do not silently select another port or
+stop an unrelated process. Browser refreshes show edits without a build step.
+
+### Site principles
 
 1. **Public by default means careful by default.** Assume every push is captured.
 2. **No dependencies.** Zero third-party code in a public artefact is a feature. Each addition is a
