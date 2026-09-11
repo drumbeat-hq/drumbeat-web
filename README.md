@@ -17,8 +17,9 @@ Keep this port unchanged across sessions; reuse the existing preview server when
 Refresh the browser after edits to see changes; no build step is required.
 The page uses only HTML and CSS, with system fonts and no external asset requests.
 On desktop, native CSS scroll animations expand the workspace, move a highlight around
-its frame, reveal the problem headline, and trace the plan's connections. On larger screens,
-the walkthrough keeps its illustration in place as the three steps scroll alongside it.
+its frame, reveal the problem headline, and trace the plan's connections. The walkthrough
+uses native radio controls to switch between a conversation, a connected revenue model, and
+a plan review, with keyboard support. The model illustration uses CSS and inline SVG.
 The principles use a bento grid with inline SVG illustrations. Motion follows scrolling;
 there are no continuously looping effects. Mobile, reduced-motion preferences, and browsers
 without scroll animation support receive the complete static layout.
