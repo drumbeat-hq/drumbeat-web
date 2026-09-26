@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- Content Security Policy as a meta tag, because GitHub Pages cannot set response headers.
+       Browsers ignore frame-ancestors in a meta policy, and nosniff cannot be set this way, so
+       neither is claimed here. Keep this before any other resource: it only governs what follows. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Drumbeat turns the revenue target into an operating plan, then tracks delivery against it — reconciled bottom-up, re-planned every month, with every assumption owned.">
   <title>Drumbeat — Revenue planning &amp; delivery</title>
