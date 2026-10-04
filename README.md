@@ -16,13 +16,10 @@ Run `python3 -m http.server 5199 --bind 127.0.0.1` from the repository root.
 Keep this port unchanged across sessions; reuse the existing preview server when it is running.
 Refresh the browser after edits to see changes; no build step is required.
 The page uses only HTML and CSS, with system fonts and no external asset requests.
-On desktop, native CSS scroll animations expand the workspace, move a highlight around
-its frame, reveal the problem headline, and trace the plan's connections. On larger screens,
-the walkthrough keeps its illustration in place as the four steps scroll alongside it, and
-the rhythm track marks the months the plan is re-run against actuals.
-The principles use a bento grid with inline SVG illustrations. Motion follows scrolling;
-there are no continuously looping effects. Mobile, reduced-motion preferences, and browsers
-without scroll animation support receive the complete static layout.
+All styling lives in `styles/site.css`: the Content Security Policy allows stylesheets from the
+site itself and nothing inline, so a `style="…"` attribute in `index.html` is blocked.
+The one continuous motion is the hero's rotating word, a CSS keyframe animation that cycles four
+words through a resizing pill. Visitors who prefer reduced motion see the first word, static.
 
 ## Working in this repo
 
