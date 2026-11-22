@@ -22,7 +22,8 @@ All styling lives in `styles/site.css`: the Content Security Policy allows style
 site itself and nothing inline, so a `style="…"` attribute in `index.html` is blocked.
 All motion is CSS: the hero's rotating word in a box that resizes to each word, the product tour's
 loop, scroll-driven reveals, and the nav, which gathers into a floating bar as the page scrolls.
-Menus, tabs and panels use CSS states, radio inputs and the native `popover` attribute, not script.
+Menus, the agents switch and its panels use CSS states, radio inputs and the native `popover`
+attribute, not script.
 Visitors who prefer reduced motion see every part static, in its final state.
 
 ## Working in this repo
