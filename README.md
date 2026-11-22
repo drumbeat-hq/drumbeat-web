@@ -15,11 +15,15 @@ The fixed local preview address is **http://127.0.0.1:5199/**.
 Run `python3 -m http.server 5199 --bind 127.0.0.1` from the repository root.
 Keep this port unchanged across sessions; reuse the existing preview server when it is running.
 Refresh the browser after edits to see changes; no build step is required.
-The page uses only HTML and CSS, with system fonts and no external asset requests.
+The page uses only HTML and CSS, with no script and no external requests. Two variable fonts are
+bundled in `assets/fonts` with their SIL Open Font License files: Albert Sans for the page and Inter
+for the drawn app screens. Product images are in `assets/shots` and integration logos in `assets/logos`.
 All styling lives in `styles/site.css`: the Content Security Policy allows stylesheets from the
 site itself and nothing inline, so a `style="…"` attribute in `index.html` is blocked.
-The one continuous motion is the hero's rotating word, a CSS keyframe animation that cycles four
-words through a resizing pill. Visitors who prefer reduced motion see the first word, static.
+All motion is CSS: the hero's rotating word in a box that resizes to each word, the product tour's
+loop, scroll-driven reveals, and the nav, which gathers into a floating bar as the page scrolls.
+Menus, tabs and panels use CSS states, radio inputs and the native `popover` attribute, not script.
+Visitors who prefer reduced motion see every part static, in its final state.
 
 ## Working in this repo
 
