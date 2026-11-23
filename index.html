@@ -10,7 +10,7 @@
   <meta name="description" content="A revenue plan your team can trust, own, defend and hit. Drumbeat's planning agents connect the board target to pipeline, capacity, retention and expansion, and re-plan against actuals every month.">
   <title>Drumbeat — Agentic revenue planning</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles/site.css?v=20261121-1">
+  <link rel="stylesheet" href="styles/site.css?v=20261122-1">
 </head>
 <body>
   <a class="skip button-sm" href="#main">Skip to content</a>
@@ -172,59 +172,218 @@
       </ul>
     </section>
 
-    <section class="where shell" id="agents" aria-labelledby="agents-title">
-      <h2 class="where__title heading-3" id="agents-title">Use Drumbeat’s agents where you already work</h2>
-      <div class="where__switch" role="radiogroup" aria-label="Show">
-        <label><input type="radio" name="where" id="where-mcp" checked><span class="title-3">MCP</span></label>
-        <label><input type="radio" name="where" id="where-src"><span class="title-3">Connectors</span></label>
+    <section class="collab shell" id="agents" aria-labelledby="agents-title">
+      <div class="collab__side">
+        <p class="eyebrow title-3">Agents</p>
+        <h2 class="collab__title heading-3" id="agents-title">Use Drumbeat’s agents where you already work</h2>
+        <ul class="collab__list">
+          <li class="collab__item"><img src="assets/logos/claude.svg" width="20" height="20" alt=""><span><b class="title-3">Claude</b><span class="caption-2">Ask about the plan in any chat</span></span></li>
+          <li class="collab__item"><img src="assets/logos/cursor.svg" width="20" height="20" alt=""><span><b class="title-3">Cursor</b><span class="caption-2">Ask from the editor you build in</span></span></li>
+          <li class="collab__item"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span><b class="title-3">Any MCP client</b><span class="caption-2">Connect any assistant that speaks MCP</span></span></li>
+        </ul>
       </div>
-      <ul class="where__grid where__grid--mcp">
-        <li><button class="tile" type="button" popovertarget="ask-claude"><img src="assets/logos/claude.svg" width="40" height="40" alt=""><b class="title-3">Claude</b></button></li>
-        <li><button class="tile" type="button" popovertarget="ask-cursor"><img src="assets/logos/cursor.svg" width="40" height="40" alt=""><b class="title-3">Cursor</b></button></li>
-        <li><button class="tile" type="button" popovertarget="ask-any"><span class="tile__more" aria-hidden="true"><i></i><i></i><i></i></span><b class="title-3">Any MCP client</b></button></li>
+      <div class="collab__stack">
+        <div class="ask collab__win" role="group" aria-label="Drumbeat in Claude">
+          <div class="ask__head"><img src="assets/logos/claude.svg" width="20" height="20" alt=""><b class="title-3">Drumbeat in Claude</b></div>
+          <div class="ask__body">
+            <p class="ask__q">Why is Q3 expansion behind plan?</p>
+            <ul class="ask__team">
+              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="67.3" width="8" height="12.7" rx="4"/><rect x="39" y="58.2" width="8" height="21.8" rx="4"/><rect x="53" y="49.1" width="8" height="30.9" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Research</b><span>Read Salesforce, HubSpot and Stripe</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
+              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Planner</b><span>Rebuilt the revenue bridge</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
+              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Critic</b><span>Flagged: win rate above last year</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--flag"><svg viewBox="0 0 12 12"><path d="M6 3v3.5"/><path d="M6 8.75v.01"/></svg></i></span></li>
+            </ul>
+            <div class="ask__you"><span class="crew__avatar"><svg viewBox="0 0 16 16"><circle cx="8" cy="5.5" r="2.75"/><path d="M2.75 13.5c.6-2.6 2.7-4 5.25-4s4.65 1.4 5.25 4"/></svg></span><span class="ask__who"><b>You</b><span>1 change to confirm</span></span><i>Review</i></div>
+          </div>
+        </div>
+        <div class="ask collab__win" role="group" aria-label="Drumbeat in Cursor">
+          <div class="ask__head"><img src="assets/logos/cursor.svg" width="20" height="20" alt=""><b class="title-3">Drumbeat in Cursor</b></div>
+          <div class="ask__body">
+            <p class="ask__q">Why is Q3 expansion behind plan?</p>
+            <ul class="ask__team">
+              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="67.3" width="8" height="12.7" rx="4"/><rect x="39" y="58.2" width="8" height="21.8" rx="4"/><rect x="53" y="49.1" width="8" height="30.9" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Research</b><span>Read Salesforce, HubSpot and Stripe</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
+              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Planner</b><span>Rebuilt the revenue bridge</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
+              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Critic</b><span>Flagged: win rate above last year</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--flag"><svg viewBox="0 0 12 12"><path d="M6 3v3.5"/><path d="M6 8.75v.01"/></svg></i></span></li>
+            </ul>
+            <div class="ask__you"><span class="crew__avatar"><svg viewBox="0 0 16 16"><circle cx="8" cy="5.5" r="2.75"/><path d="M2.75 13.5c.6-2.6 2.7-4 5.25-4s4.65 1.4 5.25 4"/></svg></span><span class="ask__who"><b>You</b><span>1 change to confirm</span></span><i>Review</i></div>
+          </div>
+        </div>
+        <div class="ask collab__win" role="group" aria-label="Drumbeat in your AI">
+          <div class="ask__head"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><b class="title-3">Drumbeat in your AI</b></div>
+          <div class="ask__body">
+            <p class="ask__q">Why is Q3 expansion behind plan?</p>
+            <ul class="ask__team">
+              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="67.3" width="8" height="12.7" rx="4"/><rect x="39" y="58.2" width="8" height="21.8" rx="4"/><rect x="53" y="49.1" width="8" height="30.9" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Research</b><span>Read Salesforce, HubSpot and Stripe</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
+              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Planner</b><span>Rebuilt the revenue bridge</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
+              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Critic</b><span>Flagged: win rate above last year</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--flag"><svg viewBox="0 0 12 12"><path d="M6 3v3.5"/><path d="M6 8.75v.01"/></svg></i></span></li>
+            </ul>
+            <div class="ask__you"><span class="crew__avatar"><svg viewBox="0 0 16 16"><circle cx="8" cy="5.5" r="2.75"/><path d="M2.75 13.5c.6-2.6 2.7-4 5.25-4s4.65 1.4 5.25 4"/></svg></span><span class="ask__who"><b>You</b><span>1 change to confirm</span></span><i>Review</i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="record shell" id="record" aria-labelledby="record-title">
+      <p class="eyebrow title-3">On the record</p>
+      <h2 class="record__title heading-3" id="record-title">Nothing changes without a name on it</h2>
+      <ul class="boxes boxes--even">
+        <li class="cell">
+          <div class="box box--vig">
+            <div class="hist" aria-hidden="true">
+              <p class="hist__head"><b>History</b><span class="hist__csv"><svg viewBox="0 0 12 12"><path d="M6 2v5.5M3.5 5L6 7.5 8.5 5M2.5 10h7"/></svg>Download CSV</span></p>
+              <div class="hist__window">
+                <ol class="hist__track">
+                  <li><i></i><span><b>Target signed: CRO</b><span>Version 3</span></span><time>Now</time></li>
+                  <li><i></i><span><b>Target signed: CFO</b><span>Version 3</span></span><time>2m</time></li>
+                  <li><i></i><span><b>Target signed: CEO</b><span>Version 3</span></span><time>1h</time></li>
+                  <li><i></i><span><b>Target version 3 ready to sign</b><span>Saved by the CEO</span></span><time>1h</time></li>
+                  <li><i></i><span><b>Version 2 countered: Customer success</b><span>Chloe Bennett</span></span><time>2d</time></li>
+                  <li><i></i><span><b>Plan version 2 published</b><span>Plan lead</span></span><time>3d</time></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <h3 class="box__title body-3"><b>History</b> keeps who changed what, when, and why</h3>
+        </li>
+        <li class="cell">
+          <div class="box box--vig">
+            <div class="vcard sign" aria-hidden="true">
+              <p class="vcard__head"><b>Company target</b><span>Version 3</span></p>
+              <ul class="sign__seats">
+                <li><span>CEO</span><em class="chip chip--ok">Signed</em></li>
+                <li><span>CFO</span><em class="chip chip--ok">Signed</em></li>
+                <li><span>CRO</span><span class="sign__swap"><i class="sign__btn">Sign as CRO</i><em class="chip chip--ok">Signed</em></span></li>
+              </ul>
+              <p class="sign__done"><span class="lock"><svg viewBox="0 0 16 16"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path class="lock__shackle" d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg></span>Version 3 signed</p>
+            </div>
+          </div>
+          <h3 class="box__title body-3"><b>Sign-off</b> locks the target once the CEO, CFO and CRO sign</h3>
+        </li>
+        <li class="cell">
+          <div class="box box--vig">
+            <div class="vcard ovr" aria-hidden="true">
+              <p class="vcard__head"><b>Book more first meetings from inbound</b></p>
+              <p class="ovr__sub">Lucas Moreau · For the week ending 14 Nov</p>
+              <p class="ovr__row"><span>Status</span><span class="flip"><span class="chip chip--warn">Amber</span><span class="chip chip--ok">Green</span></span></p>
+              <p class="ovr__why"><span>Why</span><span class="ovr__type">A partner webinar booked 40 first meetings.</span></p>
+              <p class="ovr__note">Green (owner) · computed Amber</p>
+            </div>
+          </div>
+          <h3 class="box__title body-3"><b>Overrides</b> need a reason, and the computed status stays in view</h3>
+        </li>
+        <li class="cell">
+          <div class="box box--vig">
+            <div class="close" aria-hidden="true">
+              <p class="close__event"><svg viewBox="0 0 16 16"><rect x="2.5" y="3.5" width="11" height="10" rx="2"/><path d="M2.5 6.5h11M5.5 2v3M10.5 2v3"/></svg><b>Month closed</b><span>October</span></p>
+              <div class="vcard close__card">
+                <p class="vcard__head"><img src="assets/logos/stripe.svg" width="16" height="16" alt=""><b>Stripe sync</b></p>
+                <ol class="close__steps">
+                  <li><i>1</i>Read subscriptions and invoices</li>
+                  <li><i>2</i>Read prices and coupons</li>
+                  <li><i>3</i>Kept October’s snapshot</li>
+                </ol>
+                <p class="close__foot"><span class="ask__mark"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Done · read-only</p>
+              </div>
+            </div>
+          </div>
+          <h3 class="box__title body-3"><b>Stripe</b> syncs again on its own after each month closes</h3>
+        </li>
       </ul>
-      <ul class="where__grid where__grid--src">
-        <li><div class="tile"><span class="flow__glyph tile__glyph">S</span><b class="title-3">Salesforce</b><span class="caption-2">Opportunities</span></div></li>
-        <li><div class="tile"><img src="assets/logos/hubspot.svg" width="40" height="40" alt=""><b class="title-3">HubSpot</b><span class="caption-2">Deals</span></div></li>
-        <li><div class="tile"><img src="assets/logos/stripe.svg" width="40" height="40" alt=""><b class="title-3">Stripe</b><span class="caption-2">Subscriptions</span></div></li>
-        <li><div class="tile"><img src="assets/logos/confluence.svg" width="40" height="40" alt=""><b class="title-3">Confluence</b><span class="caption-2">Playbooks</span></div></li>
-      </ul>
-        <div class="ask" id="ask-claude" popover aria-label="Drumbeat in Claude">
-          <div class="ask__head"><img src="assets/logos/claude.svg" width="20" height="20" alt=""><b class="title-3">Drumbeat in Claude</b><button class="ask__x" type="button" popovertarget="ask-claude" popovertargetaction="hide" aria-label="Close"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
-          <div class="ask__body">
-            <p class="ask__q">Why is Q3 expansion behind plan?</p>
-            <ul class="ask__team">
-              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="67.3" width="8" height="12.7" rx="4"/><rect x="39" y="58.2" width="8" height="21.8" rx="4"/><rect x="53" y="49.1" width="8" height="30.9" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Research</b><span>Read Salesforce, HubSpot and Stripe</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
-              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Planner</b><span>Rebuilt the revenue bridge</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
-              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Critic</b><span>Flagged: win rate above last year</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--flag"><svg viewBox="0 0 12 12"><path d="M6 3v3.5"/><path d="M6 8.75v.01"/></svg></i></span></li>
-            </ul>
-            <div class="ask__you"><span class="crew__avatar"><svg viewBox="0 0 16 16"><circle cx="8" cy="5.5" r="2.75"/><path d="M2.75 13.5c.6-2.6 2.7-4 5.25-4s4.65 1.4 5.25 4"/></svg></span><span class="ask__who"><b>You</b><span>1 change to confirm</span></span><i>Review</i></div>
+    </section>
+
+    <section class="insights" id="insights" aria-labelledby="insights-title">
+      <div class="shell">
+        <p class="eyebrow title-3">Insights</p>
+        <h2 class="heading-3" id="insights-title">See where the plan stands</h2>
+        <p class="insights__sub body-3">What the Executives and the Plan lead see.</p>
+        <div class="cards-wrap">
+          <ul class="cards" tabindex="0" aria-label="Insights">
+            <li class="card">
+              <p class="card__title title-2">Progress</p>
+              <p class="card__q caption-2">Which initiatives need attention?</p>
+              <div class="gauge" aria-hidden="true">
+                <svg viewBox="0 0 240 132"><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-90.00)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-82.17)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-74.35)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-66.52)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-58.70)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-50.87)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-43.04)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-35.22)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-27.39)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-19.57)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-11.74)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(-3.91)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(3.91)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(11.74)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(19.57)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(27.39)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(35.22)"/><rect class="t-ok" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(43.04)"/><rect class="t-warn" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(50.87)"/><rect class="t-warn" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(58.70)"/><rect class="t-warn" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(66.52)"/><rect class="t-warn" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(74.35)"/><rect class="t-bad" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(82.17)"/><rect class="t-bad" x="-3" y="-108" width="6" height="22" rx="3" transform="translate(120 124) rotate(90.00)"/></svg>
+                <p class="gauge__mid"><b>12</b><span>initiatives</span></p>
+              </div>
+              <p class="card__legend caption-2"><span><i class="dot dot--ok"></i>9 green</span><span><i class="dot dot--warn"></i>2 amber</span><span><i class="dot dot--bad"></i>1 red</span></p>
+            </li>
+            <li class="card">
+              <p class="card__title title-2">Run-rate forecast</p>
+              <p class="card__q caption-2">Where do we land if nothing changes?</p>
+              <p class="card__num">€4.79M <span class="caption-2">ARR in October 2027</span></p>
+              <div class="mbars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <p class="mbars__x caption-4" aria-hidden="true"><span>Nov 2026</span><span>Oct 2027</span></p>
+            </li>
+            <li class="card">
+              <p class="card__title title-2">Phases</p>
+              <p class="card__q caption-2">How far along is planning?</p>
+              <div class="orbit" aria-hidden="true">
+                <svg viewBox="0 0 200 200"><circle class="orbit__ring" cx="100" cy="100" r="80"/><circle class="orbit__ring orbit__ring--in" cx="100" cy="100" r="56"/><circle class="orbit__dot orbit__dot--done" cx="100.00" cy="20.00" r="6"/><circle class="orbit__dot orbit__dot--done" cx="162.55" cy="50.12" r="6"/><circle class="orbit__dot orbit__dot--done" cx="177.99" cy="117.80" r="6"/><circle class="orbit__dot orbit__dot--now" cx="134.71" cy="172.08" r="6"/><circle class="orbit__dot orbit__dot--next" cx="65.29" cy="172.08" r="6"/><circle class="orbit__dot orbit__dot--next" cx="22.01" cy="117.80" r="6"/><circle class="orbit__dot orbit__dot--next" cx="37.45" cy="50.12" r="6"/><g class="orbit__arm"><circle cx="100" cy="20" r="10"/></g></svg>
+                <p class="orbit__mid"><b>Deploy</b><span>Phase 4 of 7</span></p>
+              </div>
+              <p class="card__foot caption-2">11 of 20 steps done</p>
+            </li>
+            <li class="card">
+              <p class="card__title title-2">Check-ins</p>
+              <p class="card__q caption-2">Who checked in this week?</p>
+              <ul class="rows card__rows" aria-hidden="true">
+                <li><span><b>Ben Carter</b><span>Shorten the sales cycle</span></span><em class="chip chip--bad pop at-1">Red</em></li>
+                <li><span><b>Lucas Moreau</b><span>Book more first meetings</span></span><em class="chip chip--warn pop at-2">Amber</em></li>
+                <li><span><b>Chloe Bennett</b><span>Review every top account</span></span><em class="chip chip--muted pop at-3">Missed</em></li>
+                <li><span><b>Yuki Mori</b><span>Live within 14 days</span></span><em class="chip chip--ok pop at-4">Green</em></li>
+              </ul>
+              <p class="card__foot caption-2">Owners check in every week</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls" id="controls" aria-labelledby="controls-title">
+      <div class="shell">
+        <p class="eyebrow title-3">Controls</p>
+        <h2 class="heading-3" id="controls-title">Controls finance will ask about</h2>
+        <div class="bento">
+          <div class="bento__card">
+            <div class="audit" aria-hidden="true">
+              <p class="audit__bar"><span class="audit__filters"><i>Actor<svg viewBox="0 0 12 12"><path d="M3.5 4.75L6 7.25l2.5-2.5"/></svg></i><i>Action<svg viewBox="0 0 12 12"><path d="M3.5 4.75L6 7.25l2.5-2.5"/></svg></i></span><span class="audit__btn"><svg viewBox="0 0 12 12"><path d="M6 2v5.5M3.5 5L6 7.5 8.5 5M2.5 10h7"/></svg>Export CSV</span></p>
+              <p class="audit__row audit__row--head"><span>Time</span><span>Actor</span><span>Action</span><span>Target</span></p>
+              <div class="audit__window">
+                <div class="audit__rows">
+                  <p class="audit__row audit__row--new"><span>09:41</span><span>Julia Brandt</span><code>audit_exported</code><span></span></p>
+                  <p class="audit__row"><span>09:12</span><span>Julia Brandt</span><code>connection_replaced</code><span>Stripe</span></p>
+                  <p class="audit__row"><span>Mon</span><span>Yuki Mori</span><code>audit_exported</code><span></span></p>
+                  <p class="audit__row"><span>Fri</span><span>Yuki Mori</span><code>connection_revoked</code><span>Stripe</span></p>
+                </div>
+              </div>
+            </div>
+            <p class="bento__text caption-2"><b class="title-2">Audit log</b>Changes to members, roles and connections. Each export is itself recorded.</p>
+          </div>
+          <div class="bento__card">
+            <div class="seats" aria-hidden="true">
+              <ul class="seats__grid">
+                <li><b>CEO</b><span>Executive</span></li>
+                <li><b>CFO</b><span>Executive</span></li>
+                <li><b>CRO</b><span>Executive</span></li>
+                <li><b>Plan lead</b><span>Publishes iterations</span></li>
+                <li><b>Department head</b><span>Accepts or counters</span></li>
+                <li><b>Contributor</b><span>Sees what their head shares</span></li>
+              </ul>
+              <p class="seats__toast">Only the CFO in this planning cycle can sign for the CFO.</p>
+            </div>
+            <p class="bento__text caption-2"><b class="title-2">Roles</b>Only the role that owns a change can make it.</p>
           </div>
         </div>
-        <div class="ask" id="ask-cursor" popover aria-label="Drumbeat in Cursor">
-          <div class="ask__head"><img src="assets/logos/cursor.svg" width="20" height="20" alt=""><b class="title-3">Drumbeat in Cursor</b><button class="ask__x" type="button" popovertarget="ask-cursor" popovertargetaction="hide" aria-label="Close"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
-          <div class="ask__body">
-            <p class="ask__q">Why is Q3 expansion behind plan?</p>
-            <ul class="ask__team">
-              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="67.3" width="8" height="12.7" rx="4"/><rect x="39" y="58.2" width="8" height="21.8" rx="4"/><rect x="53" y="49.1" width="8" height="30.9" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Research</b><span>Read Salesforce, HubSpot and Stripe</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
-              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Planner</b><span>Rebuilt the revenue bridge</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
-              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Critic</b><span>Flagged: win rate above last year</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--flag"><svg viewBox="0 0 12 12"><path d="M6 3v3.5"/><path d="M6 8.75v.01"/></svg></i></span></li>
-            </ul>
-            <div class="ask__you"><span class="crew__avatar"><svg viewBox="0 0 16 16"><circle cx="8" cy="5.5" r="2.75"/><path d="M2.75 13.5c.6-2.6 2.7-4 5.25-4s4.65 1.4 5.25 4"/></svg></span><span class="ask__who"><b>You</b><span>1 change to confirm</span></span><i>Review</i></div>
-          </div>
-        </div>
-        <div class="ask" id="ask-any" popover aria-label="Drumbeat in your AI">
-          <div class="ask__head"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><b class="title-3">Drumbeat in your AI</b><button class="ask__x" type="button" popovertarget="ask-any" popovertargetaction="hide" aria-label="Close"><svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
-          <div class="ask__body">
-            <p class="ask__q">Why is Q3 expansion behind plan?</p>
-            <ul class="ask__team">
-              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="67.3" width="8" height="12.7" rx="4"/><rect x="39" y="58.2" width="8" height="21.8" rx="4"/><rect x="53" y="49.1" width="8" height="30.9" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Research</b><span>Read Salesforce, HubSpot and Stripe</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
-              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Planner</b><span>Rebuilt the revenue bridge</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--ok"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></i></span></li>
-              <li><span class="tempo"><svg viewBox="0 0 100 100"><rect class="tempo__tile" width="100" height="100" rx="28"/><g class="tempo__eyes"><circle cx="38" cy="23" r="5"/><circle cx="62" cy="23" r="5"/></g><g class="tempo__bars tempo__bars--eq ask__think"><rect x="25" y="64.5" width="8" height="15.5" rx="4"/><rect x="39" y="48.2" width="8" height="31.8" rx="4"/><rect x="53" y="40" width="8" height="40" rx="4"/><rect x="67" y="58.2" width="8" height="21.8" rx="4"/></g><g class="tempo__bars ask__end"><rect x="25" y="58.2" width="8" height="21.8" rx="4"/><rect x="39" y="52.7" width="8" height="27.3" rx="4"/><rect x="53" y="45.5" width="8" height="34.5" rx="4"/><rect x="67" y="40" width="8" height="40" rx="4"/></g></svg></span><span class="ask__who"><b>Critic</b><span>Flagged: win rate above last year</span></span><span class="ask__state"><i class="ask__bar"></i><i class="ask__mark ask__mark--flag"><svg viewBox="0 0 12 12"><path d="M6 3v3.5"/><path d="M6 8.75v.01"/></svg></i></span></li>
-            </ul>
-            <div class="ask__you"><span class="crew__avatar"><svg viewBox="0 0 16 16"><circle cx="8" cy="5.5" r="2.75"/><path d="M2.75 13.5c.6-2.6 2.7-4 5.25-4s4.65 1.4 5.25 4"/></svg></span><span class="ask__who"><b>You</b><span>1 change to confirm</span></span><i>Review</i></div>
-          </div>
-        </div>
+        <ul class="ctl">
+          <li class="ctl__item"><div class="ctl__vig ctl__vig--signin" aria-hidden="true"><ul class="v-signin"><li>Sign in with Google</li><li>Sign in with Microsoft</li><li>Sign in with email</li></ul></div><p class="caption-2"><b>Sign-in.</b> Google, Microsoft or email.</p></li>
+          <li class="ctl__item"><div class="ctl__vig ctl__vig--apart" aria-hidden="true"><span class="v-ring"></span><span class="v-icon"><svg viewBox="0 0 16 16"><path d="M8 1.75l5 2v4c0 3.1-2.1 5.5-5 6.5-2.9-1-5-3.4-5-6.5v-4z"/><path d="M5.75 8l1.6 1.6 2.9-3.1"/></svg></span></div><p class="caption-2"><b>Data kept apart.</b> Each company’s data is separate from every other’s.</p></li>
+          <li class="ctl__item"><div class="ctl__vig ctl__vig--sealed" aria-hidden="true"><span class="v-stars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="v-icon"><svg viewBox="0 0 16 16"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path class="lock__shackle" d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg></span></div><p class="caption-2"><b>Encrypted credentials.</b> Stored connection credentials are encrypted.</p></li>
+          <li class="ctl__item"><div class="ctl__vig ctl__vig--readonly" aria-hidden="true"><span class="v-tile"><img src="assets/logos/stripe.svg" width="24" height="24" alt=""></span><em class="v-chip">Read-only</em></div><p class="caption-2"><b>Read-only Stripe.</b> Drumbeat reads your billing and cannot change it.</p></li>
+          <li class="ctl__item"><div class="ctl__vig ctl__vig--invite" aria-hidden="true"><span class="v-invite"><b>Invite link</b><span>7 days</span><i class="v-left"><i></i></i></span></div><p class="caption-2"><b>Expiring invites.</b> A link works for 7 days, for one address.</p></li>
+          <li class="ctl__item"><div class="ctl__vig ctl__vig--confirm" aria-hidden="true"><span class="v-ask"><b>Proposed change</b><span>Expansion 14% → 12%</span><span class="v-btns"><i>Decline</i><i class="v-yes">Confirm</i></span></span></div><p class="caption-2"><b>People confirm.</b> Drumbeat proposes. The right person confirms.</p></li>
+          <li class="ctl__item"><div class="ctl__vig ctl__vig--export" aria-hidden="true"><span class="v-file"><svg viewBox="0 0 48 56"><path d="M4 2h28l12 12v40H4z"/><path d="M32 2v12h12"/></svg><b>CSV</b></span><span class="v-down"><svg viewBox="0 0 12 12"><path d="M6 2v6M3.5 5.5L6 8l2.5-2.5"/></svg></span></div><p class="caption-2"><b>CSV export.</b> Download History and the audit log.</p></li>
+          <li class="ctl__item"><div class="ctl__vig ctl__vig--locked" aria-hidden="true"><span class="v-versions"><span class="v-in"><span class="lock"><svg viewBox="0 0 16 16"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path class="lock__shackle" d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg></span>Version 3 in force</span><span class="v-old">Version 2 · Superseded</span></span></div><p class="caption-2"><b>Locked versions.</b> A signed version never changes. Edits start a new one.</p></li>
+        </ul>
+      </div>
     </section>
   </main>
 
